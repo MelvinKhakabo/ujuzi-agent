@@ -19,7 +19,7 @@ from google.adk.agents import Agent
 from pydantic import BaseModel, Field
 from typing import Literal
 
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-2.0-flash-lite"
 
 
 class JudgeFeedback(BaseModel):

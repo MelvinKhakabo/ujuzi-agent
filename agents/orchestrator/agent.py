@@ -27,8 +27,11 @@ Requires only a free Gemini API key from aistudio.google.com.
 """
 
 import os
+import sys
 import asyncio
 from typing import AsyncGenerator
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 
 from google.adk.agents import Agent, SequentialAgent, LoopAgent, BaseAgent
 from google.adk.agents.invocation_context import InvocationContext
