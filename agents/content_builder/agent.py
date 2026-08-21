@@ -5,7 +5,7 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 from google.adk.agents import Agent
 
-MODEL = "groq/compound"
+MODEL = "groq/compound-beta"
 
 content_builder = Agent(
     name="content_builder",
@@ -13,6 +13,7 @@ content_builder = Agent(
     description="Builds teacher lesson plans and student study guides from approved, localised content.",
     instruction="""
 You are an expert curriculum developer specialising in African education.
+Be concise and focused. Avoid unnecessary elaboration.
 
 Read from session state:
     localised_findings — approved localised content
