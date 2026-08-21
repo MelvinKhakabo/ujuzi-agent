@@ -25,6 +25,9 @@ Running locally:
 All agents run on localhost. No Google Cloud. No billing.
 Requires only a free Gemini API key from aistudio.google.com.
 """
+from dotenv import load_dotenv
+import os
+load_dotenv(os.path.join(os.path.dirname(__file__), '..', '..', '.env'))
 
 import os
 import sys
@@ -45,7 +48,7 @@ from agents.judge.agent import judge
 from agents.content_builder.agent import content_builder
 from agents.resource_finder.agent import resource_finder
 
-MODEL = "gemini-2.0-flash"
+MODEL = "groq/compound-beta"
 
 
 # ── Escalation Checker ────────────────────────────────────────────────────
