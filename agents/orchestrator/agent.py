@@ -49,7 +49,7 @@ from agents.judge.agent import judge
 from agents.content_builder.agent import content_builder
 from agents.resource_finder.agent import resource_finder
 
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-3.6-flash"
 
 
 # ── Escalation Checker ────────────────────────────────────────────────────
