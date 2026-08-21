@@ -49,7 +49,7 @@ from agents.judge.agent import judge
 from agents.content_builder.agent import content_builder
 from agents.resource_finder.agent import resource_finder
 
-MODEL = "groq/compound-beta"
+MODEL = "gemini-2.0-flash"
 
 
 # ── Escalation Checker ────────────────────────────────────────────────────

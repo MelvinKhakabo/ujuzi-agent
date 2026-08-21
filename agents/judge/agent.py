@@ -7,7 +7,7 @@ from google.adk.agents import Agent
 from pydantic import BaseModel, Field
 from typing import Literal
 
-MODEL = "groq/compound-beta"
+MODEL = "gemini-2.0-flash"
 
 
 class JudgeFeedback(BaseModel):

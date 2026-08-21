@@ -5,7 +5,7 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 from google.adk.agents import Agent
 
-MODEL = "groq/compound-beta"
+MODEL = "gemini-2.0-flash"
 
 resource_finder = Agent(
     name="resource_finder",
