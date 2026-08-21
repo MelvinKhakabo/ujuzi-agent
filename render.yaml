@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ujuzi-agent
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: adk web agents/orchestrator --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GOOGLE_GENAI_USE_VERTEXAI
+        value: false

@@ -25,6 +25,10 @@ Running locally:
 All agents run on localhost. No Google Cloud. No billing.
 Requires only a free Gemini API key from aistudio.google.com.
 """
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 from dotenv import load_dotenv
 import os
 load_dotenv(os.path.join(os.path.dirname(__file__), '..', '..', '.env'))
